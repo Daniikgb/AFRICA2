@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183e35">
+  <meta name="description" content="Descubre las 54 banderas de África en una galería educativa con idiomas, religiones y culturas de cada país.">
+  <title>Banderas de África — 54 países por descubrir</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="flags.css">
+  <script defer src="data/countries-a.js"></script>
+  <script defer src="data/countries-b.js"></script>
+  <script defer src="flags.js"></script>
+</head>
+<body class="flags-page">
+  <a class="skip-link" href="#banderas">Ir a las banderas</a>
+  <header class="site-header">
+    <a class="brand" href="./index.html" aria-label="África, inicio"><span class="brand-symbol" aria-hidden="true">✳</span><span>áfrica<span class="brand-dot">.</span></span><span class="brand-caption">ATLAS INTERACTIVO</span></a>
+    <nav aria-label="Navegación principal"><a href="./index.html">Mapa</a><a class="nav-active" href="./flags.html" aria-current="page">Banderas</a><button class="nav-link" id="flags-about">Sobre el atlas <span aria-hidden="true">↗</span></button></nav>
+    <span class="offline-badge"><span></span> Aprende y explora</span>
+  </header>
+
+  <main>
+    <section class="flags-hero" aria-labelledby="flags-title">
+      <div class="flags-hero-copy"><p class="eyebrow"><span></span> LOS COLORES DE UN CONTINENTE</p><h1 id="flags-title">Cada bandera,<br><em>una historia por descubrir.</em></h1><p>Explora los 54 países de África a través de sus banderas. Descubre las lenguas, las creencias y las culturas que conviven en cada uno.</p><a class="hero-explore" href="#banderas">Encuentra tu próximo descubrimiento <span aria-hidden="true">↓</span></a></div>
+      <div class="flag-composition" aria-hidden="true"><div class="composition-orbit"></div><span class="composition-spark spark-one">✧</span><span class="composition-spark spark-two">✳</span><div class="hero-flag hero-flag-back"><img src="assets/flags/ma.svg" alt=""><span>MARRUECOS</span></div><div class="hero-flag hero-flag-middle"><img src="assets/flags/ke.svg" alt=""><span>KENIA</span></div><div class="hero-flag hero-flag-front"><img src="assets/flags/za.svg" alt=""><span>SUDÁFRICA <i>↗</i></span></div><div class="composition-caption"><b>54</b><span>países.<br>Infinidad de historias.</span></div></div>
+    </section>
+
+    <section class="flag-collection" id="banderas" aria-labelledby="collection-title">
+      <div class="collection-heading"><div><p class="eyebrow">UNA VENTANA A CADA PAÍS</p><h2 id="collection-title">La colección de banderas<span>.</span></h2></div><p><span aria-hidden="true">↙</span> Elige una bandera para conocer su país.</p></div>
+      <div class="flag-collection-tools"><div class="flag-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><label class="sr-only" for="flag-search">Buscar país o bandera</label><input type="search" id="flag-search" placeholder="Busca un país, por ejemplo, Kenia…" autocomplete="off"><kbd aria-hidden="true">/</kbd></div><div class="flag-filters" role="group" aria-label="Filtrar banderas por región"><button class="flag-filter active" data-region="all" aria-pressed="true">Todas <span>54</span></button><button class="flag-filter" data-region="Norte" aria-pressed="false"><i class="north"></i>Norte</button><button class="flag-filter" data-region="Oeste" aria-pressed="false"><i class="west"></i>Oeste</button><button class="flag-filter" data-region="Centro" aria-pressed="false"><i class="central"></i>Centro</button><button class="flag-filter" data-region="Este" aria-pressed="false"><i class="east"></i>Este</button><button class="flag-filter" data-region="Sur" aria-pressed="false"><i class="south"></i>Sur</button></div></div>
+      <div class="collection-meta"><p id="flags-count" role="status" aria-live="polite">54 países por descubrir</p><span>DE LA A A LA Z <span aria-hidden="true">↓</span></span></div>
+      <div class="flags-grid" id="flags-grid"></div>
+      <div class="flags-empty" id="flags-empty" hidden><span aria-hidden="true">⌕</span><h3>Tu próximo destino sigue ahí.</h3><p>No encontramos países con esa búsqueda y región. Prueba otro nombre o muestra todas las banderas.</p><button id="clear-filters">Ver las 54 banderas</button></div>
+    </section>
+    <section class="flags-note"><span class="note-star" aria-hidden="true">✺</span><div><h2>54 países. Muchas formas de ver el mundo.</h2><p>No existe un único idioma, religión o cultura que represente por igual a toda África. Cada ficha es una invitación a conocer su diversidad.</p></div><a href="./index.html">Explorar el mapa <span aria-hidden="true">↗</span></a></section>
+    <footer class="site-footer"><p>54 países soberanos · Banderas y fichas disponibles sin conexión.</p><button id="flags-sources">Fuentes y criterios del atlas <span aria-hidden="true">↗</span></button></footer>
+  </main>
+
+  <dialog id="flag-detail-dialog" class="flag-detail-dialog" aria-labelledby="country-title"><article id="flag-country-panel" class="country-panel"></article></dialog>
+  <dialog id="flags-about-dialog" aria-labelledby="flags-about-title"><button class="dialog-close" aria-label="Cerrar información">×</button><p class="eyebrow">COLORES QUE INVITAN A APRENDER</p><h2 id="flags-about-title">África, bandera a bandera.</h2><p>Esta galería reúne las banderas de los 54 países soberanos de África. Puedes buscar por nombre, filtrar por región y seleccionar cualquier bandera para leer una ficha educativa.</p><p>Las banderas identifican países; sus habitantes tienen culturas, idiomas y creencias diversas. Los ejemplos de las fichas pertenecen a comunidades y zonas concretas.</p><h3>Fuentes y contexto</h3><p>Cada ficha enlaza sus fuentes: organismos nacionales, UNESCO y estudios sobre religión. Las estimaciones religiosas tienen fechas y métodos diferentes; no equivalen a un censo actual. Las lenguas oficiales y de uso cotidiano se distinguen cuando es posible.</p><ul><li><a href="https://github.com/lipis/flag-icons" target="_blank" rel="noopener noreferrer">flag-icons</a>: banderas SVG, licencia MIT incluida en el proyecto.</li><li><a href="https://ich.unesco.org/es/listas" target="_blank" rel="noopener noreferrer">UNESCO</a>: patrimonio cultural de comunidades concretas.</li><li><a href="https://www.pewresearch.org/religion/" target="_blank" rel="noopener noreferrer">Pew Research Center</a>: estudios de diversidad religiosa.</li></ul><p class="dialog-note">El Sáhara Occidental es un territorio disputado y no integra esta colección de 54 países. Su situación se señala en el <a href="./index.html#EH">mapa del atlas</a>.</p><p class="dialog-note">Revisión: octubre de 2026. La galería y sus fichas funcionan sin conexión. Los enlaces de consulta requieren internet.</p></dialog>
+  <noscript><div class="noscript">Activa JavaScript para ver las 54 banderas y sus fichas educativas.</div></noscript>
+</body>
+</html>
